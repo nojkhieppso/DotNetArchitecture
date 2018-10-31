@@ -1,0 +1,4 @@
+<select #select [required]="required" (change)="onChange(select.value)">
+    <option value="" selected [disabled]="required"></option>
+    <option *ngFor="let option of options" [value]="option.value">{{ option.label }}</option>
+</select>

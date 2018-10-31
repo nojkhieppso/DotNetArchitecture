@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+        <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
+        <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\DependencyInjection\Solution.CrossCutting.DependencyInjection.csproj" />
+        <ProjectReference Include="..\Logging\Solution.CrossCutting.Logging.csproj" />
+        <ProjectReference Include="..\Mapping\Solution.CrossCutting.Mapping.csproj" />
+        <ProjectReference Include="..\Security\Solution.CrossCutting.Security.csproj" />
+        <ProjectReference Include="..\Utils\Solution.CrossCutting.Utils.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Update="AppSettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+</Project>

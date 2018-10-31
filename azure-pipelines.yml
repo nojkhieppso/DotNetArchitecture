@@ -1,0 +1,9 @@
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+variables:
+  imageName: 'dot-net-architecture:$(build.buildId)'
+
+steps:
+- script: docker-compose up --build -d --force-recreate
+  displayName: 'docker build'
