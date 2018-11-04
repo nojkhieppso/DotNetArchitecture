@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\CrossCutting\Security\Solution.CrossCutting.Security.csproj" />
+        <ProjectReference Include="..\..\Infrastructure\Database\Solution.Infrastructure.Database.csproj" />
+        <ProjectReference Include="..\..\Model\Enums\Solution.Model.Enums.csproj" />
+        <ProjectReference Include="..\..\Model\Models\Solution.Model.Models.csproj" />
+        <ProjectReference Include="..\..\Model\Validators\Solution.Model.Validators.csproj" />
+    </ItemGroup>
+</Project>

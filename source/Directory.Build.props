@@ -1,0 +1,9 @@
+<Project>
+    <PropertyGroup>
+        <CodeAnalysisRuleset>$(MSBuildThisFileDirectory)Ruleset.ruleset</CodeAnalysisRuleset>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <LangVersion>latest</LangVersion>
+        <NeutralLanguage>en</NeutralLanguage>
+        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    </PropertyGroup>
+</Project>

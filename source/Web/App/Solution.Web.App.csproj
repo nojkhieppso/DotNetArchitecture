@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <BuildServerSideRenderer>false</BuildServerSideRenderer>
+        <IsPackable>false</IsPackable>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+        <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <Content Update="**/*package-lock.json" Visible="false" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.5" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.3.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.3.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Application\Applications\Solution.Application.Applications.csproj" />
+        <ProjectReference Include="..\..\CrossCutting\AspNetCore\Solution.CrossCutting.AspNetCore.csproj" />
+        <ProjectReference Include="..\..\CrossCutting\DependencyInjection\Solution.CrossCutting.DependencyInjection.csproj" />
+        <ProjectReference Include="..\..\CrossCutting\Security\Solution.CrossCutting.Security.csproj" />
+        <ProjectReference Include="..\..\CrossCutting\Utils\Solution.CrossCutting.Utils.csproj" />
+        <ProjectReference Include="..\..\Model\Enums\Solution.Model.Enums.csproj" />
+        <ProjectReference Include="..\..\Model\Models\Solution.Model.Models.csproj" />
+    </ItemGroup>
+</Project>

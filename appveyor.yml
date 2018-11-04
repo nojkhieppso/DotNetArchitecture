@@ -1,0 +1,8 @@
+version: 1.0.{build}
+skip_tags: true
+image: Visual Studio 2017 Preview
+before_build:
+- cmd: dotnet restore source/Web/App/Solution.Web.App.csproj
+build:
+  project: source/Web/App/Solution.Web.App.csproj
+  verbosity: minimal

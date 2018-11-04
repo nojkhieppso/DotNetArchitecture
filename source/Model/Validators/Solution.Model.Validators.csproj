@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="8.0.100" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\CrossCutting\Utils\Solution.CrossCutting.Utils.csproj" />
+        <ProjectReference Include="..\Models\Solution.Model.Models.csproj" />
+    </ItemGroup>
+</Project>

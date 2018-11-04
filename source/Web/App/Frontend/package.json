@@ -1,0 +1,42 @@
+{
+    "name": "frontend",
+    "description": "frontend",
+    "author": "Rafael Ferreira Garcia",
+    "license": "MIT",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@angular/common": "7.0.2",
+        "@angular/compiler": "7.0.2",
+        "@angular/core": "7.0.2",
+        "@angular/forms": "7.0.2",
+        "@angular/http": "7.0.2",
+        "@angular/platform-browser": "7.0.2",
+        "@angular/platform-browser-dynamic": "7.0.2",
+        "@angular/router": "7.0.2",
+        "cleave.js": "1.4.4",
+        "core-js": "2.5.7",
+        "ngx-cacheable": "1.0.7",
+        "rxjs": "6.3.3",
+        "uikit": "3.0.0-rc.20",
+        "zone.js": "0.8.26"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "0.10.4",
+        "@angular/cli": "7.0.4",
+        "@angular/compiler-cli": "7.0.2",
+        "@angular/language-service": "7.0.2",
+        "@types/node": "10.12.2",
+        "codelyzer": "4.5.0",
+        "tslint": "5.11.0",
+        "typescript": "3.1.6"
+    },
+    "scripts": {
+        "restore": "npm install --suppess-warnings --loglevel=error",
+        "serve": "ng lint && ng serve",
+        "container": "ng lint && ng build --configuration=container",
+        "development": "ng lint && ng build --configuration=development",
+        "staging": "ng lint && ng build --configuration=staging",
+        "production": "ng lint && ng build --configuration=production"
+    }
+}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\CrossCutting\EntityFrameworkCore\Solution.CrossCutting.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="..\..\CrossCutting\Security\Solution.CrossCutting.Security.csproj" />
+        <ProjectReference Include="..\..\Model\Entities\Solution.Model.Entities.csproj" />
+        <ProjectReference Include="..\..\Model\Enums\Solution.Model.Enums.csproj" />
+        <ProjectReference Include="..\..\Model\Models\Solution.Model.Models.csproj" />
+    </ItemGroup>
+</Project>
